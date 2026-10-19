@@ -1,0 +1,44 @@
+{
+  "name": "@lokam/vehicles",
+  "version": "1.8.3",
+  "description": "UI-free Three.js fleet with 14 customizable vehicles, fitted occupants, steering IK, lights and optional rigid-body physics.",
+  "type": "module",
+  "main": "./lokam-vehicles.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./lokam-vehicles.js"
+    },
+    "./physics": {
+      "types": "./physics.d.ts",
+      "import": "./lokam-physics.js"
+    }
+  },
+  "files": [
+    "lokam-vehicles.js",
+    "index.d.ts",
+    "assets",
+    "README.md",
+    "integration-example.js",
+    "asset-report.json",
+    "validation.json",
+    "SHA256SUMS.txt",
+    "lokam-physics.js",
+    "physics.d.ts",
+    "physics-example.js",
+    "CREDITS.md",
+    "MIGRATION.md",
+    ".gitattributes",
+    ".gitignore"
+  ],
+  "peerDependencies": {
+    "three": "~0.185.0",
+    "@dimforge/rapier3d-compat": "~0.19.3"
+  },
+  "peerDependenciesMeta": {
+    "@dimforge/rapier3d-compat": {
+      "optional": true
+    }
+  }
+}

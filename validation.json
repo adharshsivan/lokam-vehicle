@@ -1,0 +1,117 @@
+{
+  "moduleVersion": "1.8.3",
+  "date": "2026-10-19",
+  "vehicleTypes": 14,
+  "unitTests": 27,
+  "checks": [
+    {
+      "check": "Paint surface area partition, natural hardware, source buffers, sharing and disposal",
+      "status": "passed"
+    },
+    {
+      "check": "14-vehicle wiper sweep, glass clearance, modes, parking, saved settings and mirror feet",
+      "status": "passed"
+    },
+    {
+      "check": "14 populated cabins, unchanged limb lengths, supported hands, full bus and cleanup",
+      "status": "passed"
+    },
+    {
+      "check": "14 driver wrist comfort and contact, seated lap hands and idle movement",
+      "status": "passed"
+    },
+    {
+      "check": "14-vehicle interior geometry, doors, floor rails, sharing and disposal",
+      "status": "passed"
+    },
+    {
+      "check": "14-vehicle exterior views, mirror preservation and glass intrusion",
+      "status": "passed"
+    },
+    {
+      "check": "Removed fleet IDs, repaint protection, populated front/rear/side views and wiper controls",
+      "status": "passed"
+    },
+    {
+      "check": "30/60/120 Hz consistency, collisions, keyboard and mobile touch controls",
+      "status": "passed"
+    },
+    {
+      "check": "Separate Vite production deployment and public asset/font loading",
+      "status": "passed"
+    },
+    {
+      "check": "14-vehicle darker glazing and populated renders",
+      "status": "passed"
+    },
+    {
+      "check": "Auto exterior stripe across Kerala, Delhi and custom paint from both sides and rear",
+      "status": "passed"
+    },
+    {
+      "check": "14-vehicle lower-body two-tone, mirror protection and SUV roof rail protection",
+      "status": "passed"
+    },
+    {
+      "check": "SUV bonnet, mirror, roof and whole-vehicle visual finish",
+      "status": "passed"
+    },
+    {
+      "check": "Normal and police offroad SUV defaults, switching, clothing and saved configurations",
+      "status": "passed"
+    },
+    {
+      "check": "14-vehicle body-mounted wiper pivots, smoke output/config, sport mirrors and badge removal",
+      "status": "passed"
+    },
+    {
+      "check": "SUV rear shell, police finish, wiper cowl and smoke movement/reset close views",
+      "status": "passed"
+    },
+    {
+      "check": "14-vehicle bevelled plate faces, lettering relief, fasteners, styles and disposal",
+      "status": "passed"
+    },
+    {
+      "check": "14-vehicle fitted plate/lamp contact and functional lighting",
+      "status": "passed"
+    },
+    {
+      "check": "Fresh standalone production build with public assets, smoke and plate rendering",
+      "status": "passed"
+    },
+    {
+      "check": "Removed checker/diagonal styles from API, preview and studio; remaining shader IDs and rendering retained",
+      "status": "passed"
+    },
+    {
+      "check": "Bus LED contrast through the glazing, 15 clear probes, bilingual text, no idle redraws and texture/font disposal",
+      "status": "passed"
+    },
+    {
+      "check": "Metallic defaults on all 14 vehicles/variants, initial body isolation, flat pickup cargo, emblem removal, complete auto mirrors and disposal",
+      "status": "passed"
+    },
+    {
+      "check": "Latest module in separate production deployment",
+      "status": "passed"
+    },
+    {
+      "check": "Bus wall/skin clearance, 58 seated capacity, animated window clearance, both liveries and Kerala KSRTC color reference",
+      "status": "passed"
+    },
+    {
+      "check": "KSRTC shadow-pass probes, continuous windshield/seal, confined driver window and flush lower body, matched unobstructed wheel faces, actual glass/wiper clearance, fleet handle/guard masks and shared-resource disposal",
+      "status": "passed"
+    },
+    {
+      "check": "Updated v1.8.3 module in a separate production build",
+      "status": "passed"
+    }
+  ],
+  "sourcePacksByteIdenticalToPreviousDelivery": true,
+  "limits": [
+    "Desktop browser and emulated mobile controls tested; no universal device FPS guarantee.",
+    "Source pack files remain intact; the public catalog and API exclude the six removed vehicle IDs."
+  ]
+}

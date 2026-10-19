@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "units": "meters",
+  "up": "+Y",
+  "forward": "+Z",
+  "origin": "rear axle center at ground height",
+  "vehicles": [
+    {
+      "id": "garbage-truck",
+      "name": "garbage_truck",
+      "pack": "civil.glb",
+      "node": "garbage-truck",
+      "dimensions": [
+        2.6177790183791876,
+        2.8307906530297493,
+        7.652764217549598
+      ],
+      "wheelCount": 6,
+      "type": "truck"
+    },
+    {
+      "id": "taxi",
+      "name": "taxi",
+      "pack": "civil.glb",
+      "node": "taxi",
+      "dimensions": [
+        1.9987883018555979,
+        1.5035111719423584,
+        5.085253584091798
+      ],
+      "wheelCount": 4,
+      "type": "car"
+    },
+    {
+      "id": "tow-truck",
+      "name": "towtruck",
+      "pack": "civil.glb",
+      "node": "tow-truck",
+      "dimensions": [
+        2.376398114345692,
+        2.3938315443836964,
+        6.941045052365515
+      ],
+      "wheelCount": 4,
+      "type": "truck"
+    },
+    {
+      "id": "compact",
+      "name": "Compact_Body",
+      "pack": "passenger.glb",
+      "node": "compact",
+      "dimensions": [
+        1.6073952991721279,
+        1.315169051615074,
+        3.256816423344464
+      ],
+      "wheelCount": 4,
+      "type": "compact"
+    },
+    {
+      "id": "hatchback",
+      "name": "Hatchback_Body",
+      "pack": "passenger.glb",
+      "node": "hatchback",
+      "dimensions": [
+        1.7413692071574007,
+        1.3522358351232082,
+        3.955899543431898
+      ],
+      "wheelCount": 4,
+      "type": "compact"
+    },
+    {
+      "id": "minivan",
+      "name": "minivan_body",
+      "pack": "passenger.glb",
+      "node": "minivan",
+      "dimensions": [
+        1.8683385036135154,
+        1.7628454144490624,
+        4.609071269744904
+      ],
+      "wheelCount": 4,
+      "type": "van"
+    },
+    {
+      "id": "offroad",
+      "name": "Offroad_Body",
+      "pack": "passenger.glb",
+      "node": "offroad",
+      "dimensions": [
+        1.9600267748498834,
+        1.5696125417427886,
+        3.9394362348696097
+      ],
+      "wheelCount": 4,
+      "type": "suv"
+    },
+    {
+      "id": "pickup",
+      "name": "Pickup_Body",
+      "pack": "passenger.glb",
+      "node": "pickup",
+      "dimensions": [
+        2.067609016252021,
+        1.6975895714929694,
+        5.180059170144716
+      ],
+      "wheelCount": 4,
+      "type": "pickup"
+    },
+    {
+      "id": "sedan",
+      "name": "Sedan_Body",
+      "pack": "passenger.glb",
+      "node": "sedan",
+      "dimensions": [
+        1.9415218871460407,
+        1.3421647379657906,
+        4.359072381223948
+      ],
+      "wheelCount": 4,
+      "type": "car"
+    },
+    {
+      "id": "sport",
+      "name": "Sport_body",
+      "pack": "passenger.glb",
+      "node": "sport",
+      "dimensions": [
+        1.7683692346118896,
+        1.0396878068618172,
+        3.912404344679694
+      ],
+      "wheelCount": 4,
+      "type": "sport"
+    },
+    {
+      "id": "suv",
+      "name": "SUV_Body",
+      "pack": "passenger.glb",
+      "node": "suv",
+      "dimensions": [
+        2.0676090162519976,
+        1.733233275472012,
+        4.6112673570268505
+      ],
+      "wheelCount": 4,
+      "type": "suv"
+    },
+    {
+      "id": "wagon",
+      "name": "Wagon_Body",
+      "pack": "passenger.glb",
+      "node": "wagon",
+      "dimensions": [
+        1.9499595306320843,
+        1.3800394890638028,
+        4.382640394885747
+      ],
+      "wheelCount": 4,
+      "type": "car"
+    },
+    {
+      "id": "indian-bus",
+      "name": "indian__bus",
+      "pack": "bus.glb",
+      "node": "indian-bus",
+      "dimensions": [
+        3.038836002566967,
+        3.2444968677344086,
+        12.192202222931172
+      ],
+      "wheelCount": 6,
+      "type": "bus"
+    },
+    {
+      "id": "auto",
+      "name": "lowpoly_tuktuk",
+      "pack": "auto.glb",
+      "node": "auto",
+      "dimensions": [
+        1.3968188164349147,
+        1.8026953389341616,
+        2.655824473169753
+      ],
+      "wheelCount": 3,
+      "type": "tuk"
+    }
+  ]
+}

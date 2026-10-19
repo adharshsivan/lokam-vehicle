@@ -1,0 +1,1104 @@
+{
+  "pipeline": "Deduplicate, weld identical vertices, WebP quality 90, Meshopt, 16-bit positions, 12-bit normals, 14-bit UVs. No triangle simplification.",
+  "packs": [
+    {
+      "pack": "civil.glb",
+      "rawBytes": 19038080,
+      "bytes": 2032828,
+      "textures": 16,
+      "materials": 23,
+      "uniqueGeometryTriangles": 67842,
+      "rawUniqueGeometryTriangles": 67854,
+      "maxTextureDimension": 1024,
+      "estimatedFullPackRgba8MipMiB": 72
+    },
+    {
+      "pack": "passenger.glb",
+      "rawBytes": 18970408,
+      "bytes": 3009804,
+      "textures": 38,
+      "materials": 49,
+      "uniqueGeometryTriangles": 104246,
+      "rawUniqueGeometryTriangles": 112799,
+      "maxTextureDimension": 1024,
+      "estimatedFullPackRgba8MipMiB": 197.3
+    },
+    {
+      "pack": "bus.glb",
+      "rawBytes": 7653040,
+      "bytes": 2138292,
+      "textures": 49,
+      "materials": 80,
+      "uniqueGeometryTriangles": 56818,
+      "rawUniqueGeometryTriangles": 56818,
+      "maxTextureDimension": 1024,
+      "estimatedFullPackRgba8MipMiB": 42.5
+    },
+    {
+      "pack": "auto.glb",
+      "rawBytes": 1154584,
+      "bytes": 246224,
+      "textures": 2,
+      "materials": 7,
+      "uniqueGeometryTriangles": 17006,
+      "rawUniqueGeometryTriangles": 17006,
+      "maxTextureDimension": 1024,
+      "estimatedFullPackRgba8MipMiB": 5.3
+    }
+  ],
+  "assetBytes": 7427148,
+  "notes": "Triangle counts describe unique mesh resources, not per-instance rendering cost. Deduplication changes this count without removing visible geometry. Texture memory is an RGBA8 + mip estimate if all textures in a pack are uploaded; actual active GPU usage depends on spawned vehicles. assetBytes counts the four GLB packs; the separately listed local sign font and runtime are additional.",
+  "runtimeBytes": 170875,
+  "busSignage": {
+    "style": "High-contrast bilingual LED matrix behind a clear low-glare optical window",
+    "fontBytes": 38960,
+    "fontLoads": "once per library, on first Indian bus",
+    "canvasTexturesPerBus": 1,
+    "canvasWidth": 768,
+    "canvasHeight": 160,
+    "mipmaps": false,
+    "estimatedRgba8BytesPerBus": 491520,
+    "canvasAt512Limit": [
+      512,
+      107
+    ],
+    "canvasAt256Limit": [
+      256,
+      53
+    ],
+    "perInstanceDisplayMeshes": 3,
+    "extraSceneLights": 0,
+    "derivedGeometryCache": "Once per library, including glazing/seal and rear panel/mount repair"
+  },
+  "surfaceFinish": {
+    "default": "metallic",
+    "sourceMaterialVariants": "cached once per library; original textures shared",
+    "haloSpritesByDefault": false,
+    "sourcePacksChanged": false
+  },
+  "policeBeacon": {
+    "meshes": 6,
+    "recessedEmitterCells": 14,
+    "transparentCovers": 2,
+    "privateEmitterBanks": 2,
+    "additionalSceneLights": 0,
+    "additionalImageAssets": 0,
+    "exposedMetalPerimeter": false,
+    "coverFinish": "Smoked colored plastic without clearcoat"
+  },
+  "paintSurfaces": {
+    "panels": 19,
+    "derivedGeometries": 38,
+    "sourcePacksChanged": false,
+    "cache": "Per library, shared between instances; no per-frame matching.",
+    "protected": "Front/rear wipers, exhausts, roof rails, exterior mirrors, tubes, grille bars and recesses, tyres, optics and auto inner frame. Sport mirrors use neutral black; police offroad grille and guard stay dark. Body face masks cover old UV fragments; auto inner surfaces remain black. Door handles and side protection strips use neutral dark trim flags, including minivan inserts; no extra per-handle draw calls.",
+    "neutralTrimFaces": {
+      "garbage-truck": 698,
+      "taxi": 152,
+      "tow-truck": 20,
+      "compact": 28,
+      "hatchback": 24,
+      "minivan": 104,
+      "offroad": 80,
+      "pickup": 160,
+      "sedan": 128,
+      "sport": 0,
+      "suv": 244,
+      "wagon": 128,
+      "indian-bus": 0,
+      "auto": 0
+    }
+  },
+  "policeMarkings": {
+    "emblems": 0,
+    "textOnly": true,
+    "atlasSize": [
+      512,
+      304
+    ],
+    "atlasPixelReductionPercent": 40.625
+  },
+  "moduleVersion": "1.8.3",
+  "physicsRuntimeBytes": 7859,
+  "characters": {
+    "files": [
+      {
+        "source": "male6.glb",
+        "sourceSha256": "1ba7e4411b3a7d1fe27679b663c80e0ca47a9708d18ff99b78a4b537dcd51d2c",
+        "file": "police-male.glb",
+        "rawBytes": 2496428,
+        "bytes": 412136,
+        "triangles": 11152,
+        "rawTriangles": 23284,
+        "joints": 65,
+        "textures": 3,
+        "maxTextureDimension": 1024
+      },
+      {
+        "source": "female4.glb",
+        "sourceSha256": "1a7448a62c984f64913859cf99f0a462c380a2d663b47e5e60db5e20a174428b",
+        "file": "police-female.glb",
+        "rawBytes": 2497868,
+        "bytes": 412084,
+        "triangles": 11788,
+        "rawTriangles": 24074,
+        "joints": 65,
+        "textures": 3,
+        "maxTextureDimension": 1024
+      },
+      {
+        "source": "male5.glb",
+        "sourceSha256": "37299e68b557e5649ba040e637cd073bf8918dd91bc668b89d069e108cfe5d6e",
+        "file": "civilian-driver.glb",
+        "rawBytes": 2410064,
+        "bytes": 391788,
+        "triangles": 10884,
+        "rawTriangles": 22660,
+        "joints": 65,
+        "textures": 3,
+        "maxTextureDimension": 1024
+      },
+      {
+        "source": "female7.glb",
+        "sourceSha256": "85eb2e65164c2213bfbc9406a31c54371515d6362cf9d493a3f0f1648f2cbc8d",
+        "file": "passenger-female.glb",
+        "rawBytes": 2463704,
+        "bytes": 411320,
+        "triangles": 11747,
+        "rawTriangles": 23099,
+        "joints": 65,
+        "textures": 3,
+        "maxTextureDimension": 1024
+      },
+      {
+        "source": "male19.glb",
+        "sourceSha256": "5ad9a6577322d0567b0df0840462753d6ec834ef60377b9e9f4797db4937e70f",
+        "file": "passenger-blue.glb",
+        "rawBytes": 2265800,
+        "bytes": 376460,
+        "triangles": 10798,
+        "rawTriangles": 22344,
+        "joints": 65,
+        "textures": 3,
+        "maxTextureDimension": 1024
+      },
+      {
+        "source": "male17.glb",
+        "sourceSha256": "a4df25ecb1f0be3243d23b9cf1379224e9441f555212e7c468546762685648db",
+        "file": "passenger-polo.glb",
+        "rawBytes": 2643480,
+        "bytes": 497200,
+        "triangles": 10377,
+        "rawTriangles": 21965,
+        "joints": 65,
+        "textures": 3,
+        "maxTextureDimension": 1024
+      }
+    ],
+    "bytes": 2500988,
+    "sharing": "Six lazy shared geometry/material/texture templates; independent 65-joint skeleton per occupant. WebP <=1024px, Meshopt."
+  },
+  "interiors": {
+    "seatedCapacity": {
+      "garbage-truck": 3,
+      "taxi": 5,
+      "tow-truck": 3,
+      "compact": 4,
+      "hatchback": 4,
+      "minivan": 7,
+      "offroad": 6,
+      "pickup": 5,
+      "sedan": 5,
+      "sport": 2,
+      "suv": 5,
+      "wagon": 5,
+      "indian-bus": 58,
+      "auto": 4
+    },
+    "standingBusCapacity": 12,
+    "default": "All fitted seats, plus eight standing bus passengers.",
+    "sourcePacksChanged": false,
+    "refinement": [
+      {
+        "id": "garbage-truck",
+        "details": 170,
+        "doors": 2,
+        "triangles": 14912,
+        "draws": 12
+      },
+      {
+        "id": "taxi",
+        "details": 204,
+        "doors": 4,
+        "triangles": 16892,
+        "draws": 12
+      },
+      {
+        "id": "tow-truck",
+        "details": 170,
+        "doors": 2,
+        "triangles": 14912,
+        "draws": 12
+      },
+      {
+        "id": "compact",
+        "details": 204,
+        "doors": 4,
+        "triangles": 16892,
+        "draws": 12
+      },
+      {
+        "id": "hatchback",
+        "details": 204,
+        "doors": 4,
+        "triangles": 16892,
+        "draws": 12
+      },
+      {
+        "id": "minivan",
+        "details": 211,
+        "doors": 4,
+        "triangles": 17800,
+        "draws": 12
+      },
+      {
+        "id": "offroad",
+        "details": 64,
+        "doors": 2,
+        "triangles": 14398,
+        "draws": 13
+      },
+      {
+        "id": "pickup",
+        "details": 202,
+        "doors": 4,
+        "triangles": 16980,
+        "draws": 12
+      },
+      {
+        "id": "sedan",
+        "details": 202,
+        "doors": 4,
+        "triangles": 16980,
+        "draws": 12
+      },
+      {
+        "id": "sport",
+        "details": 152,
+        "doors": 2,
+        "triangles": 13424,
+        "draws": 12
+      },
+      {
+        "id": "suv",
+        "details": 202,
+        "doors": 4,
+        "triangles": 16980,
+        "draws": 12
+      },
+      {
+        "id": "wagon",
+        "details": 202,
+        "doors": 4,
+        "triangles": 16980,
+        "draws": 12
+      },
+      {
+        "id": "indian-bus",
+        "details": 50,
+        "doors": 0,
+        "triangles": 6866,
+        "draws": 9
+      },
+      {
+        "id": "auto",
+        "details": 17,
+        "doors": 0,
+        "triangles": 2662,
+        "draws": 6
+      }
+    ],
+    "fit": "Cabin windows measured as complete connected panes, excluding exterior mirrors. Added fittings remain inside the tapered cabin; truck feet have shorter forward reach. Obsolete source seats, inner side walls and underside caps are removed.",
+    "overhead": "Added overhead panels, visors, handles and lights removed; rearview mirrors retained with bonded glass feet and connected stalks.",
+    "poses": {
+      "maxPalmErrorMeters": 5.80157540750847e-8,
+      "maxWristBendDegrees": 58.832704469208906,
+      "maxLapErrorMeters": 8.104191828001554e-8,
+      "maxBoneLengthChangeMeters": 2.0030842096119272e-8
+    }
+  },
+  "physics": {
+    "optionalPeer": "@dimforge/rapier3d-compat ~0.19.3",
+    "fixedHz": 120,
+    "vehicles": 14,
+    "tests": {
+      "frames": [
+        {
+          "fps": 30,
+          "position": [
+            52.87339145999859,
+            -0.0042199397256028615,
+            35.9184484318266
+          ],
+          "speed": 25.907271444463415
+        },
+        {
+          "fps": 60,
+          "position": [
+            52.87339145999859,
+            -0.0042199397256028615,
+            35.9184484318266
+          ],
+          "speed": 25.907271444463415
+        },
+        {
+          "fps": 120,
+          "position": [
+            52.87339145999859,
+            -0.0042199397256028615,
+            35.9184484318266
+          ],
+          "speed": 25.907271444463415
+        }
+      ],
+      "collisionMaxZ": 9.34376573050676
+    },
+    "cornering": {
+      "turns": [
+        {
+          "id": "sedan",
+          "speed": 5,
+          "feel": "balanced",
+          "yawRate": 0.3367233682079474,
+          "radius": 14.848984276351715,
+          "roll": 0.00037644436981174994,
+          "rateJump": 0.01814374327659607,
+          "steering": 0.17801550144522538
+        },
+        {
+          "id": "sedan",
+          "speed": 5,
+          "feel": "playful",
+          "yawRate": 0.42573414254589237,
+          "radius": 11.744418641408402,
+          "roll": 0.0017358209870432127,
+          "rateJump": 0.03327872231602669,
+          "steering": 0.22082065718515645
+        },
+        {
+          "id": "sedan",
+          "speed": 12,
+          "feel": "balanced",
+          "yawRate": 0.20751576764242993,
+          "radius": 57.82693111145742,
+          "roll": 0.0005971394978471063,
+          "rateJump": 0.011238904669880867,
+          "steering": 0.045944225278327366
+        },
+        {
+          "id": "sedan",
+          "speed": 12,
+          "feel": "playful",
+          "yawRate": 0.8576567693918694,
+          "radius": 13.99161112959993,
+          "roll": 0.005686214217056237,
+          "rateJump": 0.06724582612514496,
+          "steering": 0.18585662174603518
+        },
+        {
+          "id": "sedan",
+          "speed": 22,
+          "feel": "balanced",
+          "yawRate": 0.11401970452871643,
+          "radius": 192.94910551587327,
+          "roll": 0.000600519219451486,
+          "rateJump": 0.00617436645552516,
+          "steering": 0.01376757170880225
+        },
+        {
+          "id": "sedan",
+          "speed": 22,
+          "feel": "playful",
+          "yawRate": 1.116786465925329,
+          "radius": 19.699379130433492,
+          "roll": 0.010616297129695433,
+          "rateJump": 0.09470254927873611,
+          "steering": 0.1427079343383354
+        },
+        {
+          "id": "auto",
+          "speed": 5,
+          "feel": "balanced",
+          "yawRate": 0.2668970703076916,
+          "radius": 18.733813729149453,
+          "roll": 0.015877991577113396,
+          "rateJump": 0.011690212413668633,
+          "steering": 0.1114962908298245
+        },
+        {
+          "id": "auto",
+          "speed": 5,
+          "feel": "playful",
+          "yawRate": 0.5867974592858004,
+          "radius": 8.520827622678482,
+          "roll": 0.016041811989478502,
+          "rateJump": 0.042639948427677155,
+          "steering": 0.24903438400300115
+        },
+        {
+          "id": "auto",
+          "speed": 12,
+          "feel": "balanced",
+          "yawRate": 0.11377715068955375,
+          "radius": 105.46933129607505,
+          "roll": 0.01695098139430932,
+          "rateJump": 0.005101507063955069,
+          "steering": 0.020269581294961474
+        },
+        {
+          "id": "auto",
+          "speed": 12,
+          "feel": "playful",
+          "yawRate": 1.1304250104086737,
+          "radius": 10.615476382340244,
+          "roll": 0.027909116927754874,
+          "rateJump": 0.08493642508983612,
+          "steering": 0.20960307680162024
+        },
+        {
+          "id": "auto",
+          "speed": 22,
+          "feel": "balanced",
+          "yawRate": 0.060440632475524406,
+          "radius": 363.99354372919504,
+          "roll": 0.01853549191461447,
+          "rateJump": 0.0027868228498846292,
+          "steering": 0.0060389976905626495
+        },
+        {
+          "id": "auto",
+          "speed": 22,
+          "feel": "playful",
+          "yawRate": 1.1024304608337019,
+          "radius": 19.95590722644104,
+          "roll": 0.0393354276714526,
+          "rateJump": 0.11714541912078857,
+          "steering": 0.16094138597848578
+        },
+        {
+          "id": "indian-bus",
+          "speed": 5,
+          "feel": "balanced",
+          "yawRate": 0.13382506019928878,
+          "radius": 37.362209981853404,
+          "roll": 0.0008514754232775742,
+          "rateJump": 0.006205017678439617,
+          "steering": 0.1623082513177054
+        },
+        {
+          "id": "indian-bus",
+          "speed": 5,
+          "feel": "playful",
+          "yawRate": 0.16695270706124693,
+          "radius": 29.94860094221617,
+          "roll": 0.0008072165602694169,
+          "rateJump": 0.012722093611955643,
+          "steering": 0.2013364816656192
+        },
+        {
+          "id": "indian-bus",
+          "speed": 12,
+          "feel": "balanced",
+          "yawRate": 0.13254417779565852,
+          "radius": 90.53585151435493,
+          "roll": 0.0008514754232775742,
+          "rateJump": 0.006201473064720631,
+          "steering": 0.06758422220333143
+        },
+        {
+          "id": "indian-bus",
+          "speed": 12,
+          "feel": "playful",
+          "yawRate": 0.33463624846033674,
+          "radius": 35.859833043228484,
+          "roll": 0.001506018691378509,
+          "rateJump": 0.0256207175552845,
+          "steering": 0.16945750767737194
+        },
+        {
+          "id": "indian-bus",
+          "speed": 22,
+          "feel": "balanced",
+          "yawRate": 0.07306982996333546,
+          "radius": 301.0818556857054,
+          "roll": 0.0008514754232775742,
+          "rateJump": 0.0034361034631729126,
+          "steering": 0.02042333742524437
+        },
+        {
+          "id": "indian-bus",
+          "speed": 22,
+          "feel": "playful",
+          "yawRate": 0.466686073471518,
+          "radius": 47.140896741035206,
+          "roll": 0.0033719789349077006,
+          "rateJump": 0.035909488797187805,
+          "steering": 0.13011605841369067
+        }
+      ],
+      "stability": [
+        {
+          "id": "garbage-truck",
+          "minUp": 0.9999765631859358,
+          "maxYaw": 0.9362092614173889,
+          "stoppedSpeed": 5.3327593081155516e-9,
+          "position": [
+            26.76793805723151,
+            0.003998694005372783,
+            19.90423823229675
+          ]
+        },
+        {
+          "id": "taxi",
+          "minUp": 0.9999203444977652,
+          "maxYaw": 1.464337706565857,
+          "stoppedSpeed": -2.013429999763629e-8,
+          "position": [
+            30.3824181306494,
+            -0.0005725305687190319,
+            23.37577844391909
+          ]
+        },
+        {
+          "id": "tow-truck",
+          "minUp": 0.9998657310886719,
+          "maxYaw": 1.1957671642303467,
+          "stoppedSpeed": -5.279278585273192e-8,
+          "position": [
+            27.06474451594173,
+            -0.009278865452335472,
+            13.610735372562651
+          ]
+        },
+        {
+          "id": "compact",
+          "minUp": 0.9998399512288614,
+          "maxYaw": 1.5764906406402588,
+          "stoppedSpeed": 2.064354434424165e-8,
+          "position": [
+            29.9845846898961,
+            0.005853901837168718,
+            30.358338213925652
+          ]
+        },
+        {
+          "id": "hatchback",
+          "minUp": 0.9999109942770698,
+          "maxYaw": 1.546621561050415,
+          "stoppedSpeed": 9.432328404961185e-9,
+          "position": [
+            25.20035821813354,
+            0.004548029776919094,
+            27.896586807811556
+          ]
+        },
+        {
+          "id": "minivan",
+          "minUp": 0.9998677902243304,
+          "maxYaw": 1.4802027940750122,
+          "stoppedSpeed": -9.475978351211595e-9,
+          "position": [
+            18.16340467168506,
+            0.0013110158748748102,
+            15.936431226392514
+          ]
+        },
+        {
+          "id": "offroad",
+          "minUp": 0.9999086318096568,
+          "maxYaw": 1.5456905364990234,
+          "stoppedSpeed": -1.397632196556268e-8,
+          "position": [
+            26.512622519987556,
+            0.0009299412352921088,
+            24.525764534819746
+          ]
+        },
+        {
+          "id": "pickup",
+          "minUp": 0.9998838351064026,
+          "maxYaw": 1.4324963092803955,
+          "stoppedSpeed": -1.4020815686288971e-8,
+          "position": [
+            22.994610827343433,
+            0.00015529223241450563,
+            20.837748734699094
+          ]
+        },
+        {
+          "id": "sedan",
+          "minUp": 0.9999301880046861,
+          "maxYaw": 1.4406269788742065,
+          "stoppedSpeed": -3.127691407767369e-10,
+          "position": [
+            35.495075441664305,
+            0.002681661362449239,
+            28.575733095688435
+          ]
+        },
+        {
+          "id": "sport",
+          "minUp": 0.9999595969449154,
+          "maxYaw": 0.9388846158981323,
+          "stoppedSpeed": 2.0022932309307195e-8,
+          "position": [
+            109.69759403549942,
+            0.005269485404069407,
+            117.12203048508412
+          ]
+        },
+        {
+          "id": "suv",
+          "minUp": 0.9998809401192296,
+          "maxYaw": 1.4972293376922607,
+          "stoppedSpeed": -1.1229128564832686e-8,
+          "position": [
+            24.511586036768854,
+            0.0010621473404328619,
+            22.842362089572593
+          ]
+        },
+        {
+          "id": "wagon",
+          "minUp": 0.9999292224200265,
+          "maxYaw": 1.436009168624878,
+          "stoppedSpeed": -4.2594967915614324e-9,
+          "position": [
+            35.512095743032255,
+            0.002335711500824955,
+            28.34451187718688
+          ]
+        },
+        {
+          "id": "indian-bus",
+          "minUp": 0.9999929483885771,
+          "maxYaw": 0.545443594455719,
+          "stoppedSpeed": -2.7724478793191964e-11,
+          "position": [
+            20.322388218570715,
+            -0.005398768889605776,
+            30.84650646624308
+          ]
+        },
+        {
+          "id": "auto",
+          "minUp": 0.9993461352480661,
+          "maxYaw": 1.772971272468567,
+          "stoppedSpeed": 1.0565492349827281e-7,
+          "position": [
+            6.934623379323889,
+            0.011299027526230132,
+            14.461931481013313
+          ]
+        }
+      ],
+      "airYaw": 0
+    },
+    "collision": "Simple chassis boxes and raycast ground wheels; playful yaw/side-slip assistance and roll support."
+  },
+  "totalAssetBytes": 9975480,
+  "exteriorRefinement": {
+    "types": 14,
+    "supplementalLamps": 16,
+    "nativeLensesReused": 6,
+    "plates": 28,
+    "cabinCut": "UV-preserving polygon subtraction within the actual glazing hull, with separate exterior component protection."
+  },
+  "availableVehicleIds": [
+    "garbage-truck",
+    "taxi",
+    "tow-truck",
+    "compact",
+    "hatchback",
+    "minivan",
+    "offroad",
+    "pickup",
+    "sedan",
+    "sport",
+    "suv",
+    "wagon",
+    "indian-bus",
+    "auto"
+  ],
+  "removedVehicleIds": [
+    "fire-truck",
+    "coupe",
+    "motorcycle",
+    "scooter",
+    "boat",
+    "helicopter"
+  ],
+  "wipers": {
+    "types": 14,
+    "modes": [
+      "off",
+      "intermittent",
+      "low",
+      "high"
+    ],
+    "maxBladeGapMeters": 0.004566701941309964,
+    "fit": "Pivots mount on the body below the glass; arms bridge to blades on cached curved-glass paths, with smooth reversals, split-pane truck fitting, articulated arms and automatic parking. Rear blades remain parked.",
+    "frameConsistency": [
+      0.8461538461538449,
+      0.8461538461538485,
+      0.8461538461538413
+    ],
+    "mirrors": "Neutral grey auto exterior glass; all interior mirrors have connected glass mounts."
+  },
+  "glazing": {
+    "types": 14,
+    "opacity": 0.76,
+    "finish": "Dark glazing with a clear viewing region over the bus LED display."
+  },
+  "finishCorrections": {
+    "auto": "Complete opaque neutral-silver octagonal mirror faces with graphite housings/stalks. Upper belt stripe retained; bottom accent strip removed across Kerala and Delhi liveries.",
+    "bus": "Side rails join the front window posts with sockets and return into the lower wall at the rear. Overhead aisle rail ends at its first and last supporting poles.",
+    "paint": "Secondary two-tone color remains below the lowest glazing edge. Exterior mirrors and roof rails retain their original finish; windshield-base paint covers residual bonnet texture patches.",
+    "suvRear": "Preserve complete tailgate and lower rear shell during cabin subtraction; 15 rear probes match the untrimmed shell.",
+    "policeOffroad": "Complete bumper face coverage; dark grille slats/recess and front guard protected from paint. Markings offset physically from body surfaces.",
+    "sportMirrors": "Neutral black housings and stalks with original colors, custom paint enabled or disabled.",
+    "initialBody": "Original-color and custom-painted bodywork use one disjoint surface from first render. Native colors keep metallic finish, with an early shader exit before pattern calculations.",
+    "fictionalBadges": "Removed all fictional manufacturer badges, API and preview selector."
+  },
+  "offroadVariants": {
+    "default": "standard",
+    "available": [
+      "standard",
+      "police"
+    ],
+    "preview": "Normal SUV and Police SUV in the variant selector; normal bodywork and civilians by default. Switching variants refreshes automatic clothing and emergency-light controls; saved standard configurations retain their variant."
+  },
+  "registrationFinish": {
+    "types": 14,
+    "styles": [
+      "white",
+      "yellow",
+      "black"
+    ],
+    "faceDepthMeters": 0.002599999977974221,
+    "fastenersPerPlate": 4,
+    "finish": "Bevelled metal face, lettering bump relief, recessed steel fasteners and body-fitted gasket.",
+    "texturesPerInstance": 2,
+    "disposalVerified": true
+  },
+  "exhaust": {
+    "types": 14,
+    "defaultEnabled": true,
+    "capacityPerVehicle": 64,
+    "outlets": {
+      "garbage-truck": [
+        [
+          1.2270628005558117,
+          0.2703740442077436,
+          -2.2134979660863334
+        ],
+        [
+          -1.1875036695991357,
+          0.27037404420774425,
+          -2.213497474694561
+        ]
+      ],
+      "taxi": [
+        [
+          0.5048678797466564,
+          0.34785752450758656,
+          -1.2362066949471755
+        ],
+        [
+          -0.5077753305213322,
+          0.34785752450758645,
+          -1.2362066949471755
+        ]
+      ],
+      "tow-truck": [
+        [
+          0.3662396521215349,
+          0.3935842844998486,
+          -0.17528242412861728
+        ],
+        [
+          -0.3291993901316757,
+          0.3935842844998488,
+          -0.17528242412861728
+        ]
+      ],
+      "compact": [
+        [
+          -0.01347303899766154,
+          0.2704597585640495,
+          -0.49975409217806854
+        ]
+      ],
+      "hatchback": [
+        [
+          0.39519461661687083,
+          0.2964331705351014,
+          -0.7270829491811253
+        ]
+      ],
+      "minivan": [
+        [
+          -0.43479349350740226,
+          0.2627419781338917,
+          -0.8990433813109457
+        ]
+      ],
+      "offroad": [
+        [
+          0.491844994351998,
+          0.36299131649364536,
+          -0.665425015946647
+        ]
+      ],
+      "pickup": [
+        [
+          0.45070797467251744,
+          0.3752384959442914,
+          -1.0594438608406513
+        ],
+        [
+          -0.45070797467251744,
+          0.3752384959442914,
+          -1.0594438608406513
+        ]
+      ],
+      "sedan": [
+        [
+          0.4299074989208119,
+          0.2855579164453896,
+          -0.8768463832413971
+        ],
+        [
+          -0.42735321662682124,
+          0.28555791644538947,
+          -0.8774190680174578
+        ]
+      ],
+      "sport": [
+        [
+          0.22320271385737867,
+          0.169730935332765,
+          -0.5257655156648067
+        ],
+        [
+          -0.21314732866730146,
+          0.169730935332765,
+          -0.5257654350510541
+        ]
+      ],
+      "suv": [
+        [
+          0.4470607782557724,
+          0.37525997168235947,
+          -0.934412915964353
+        ],
+        [
+          -0.4543788829804569,
+          0.37525997168235964,
+          -0.9344127663423423
+        ]
+      ],
+      "wagon": [
+        [
+          0.4306423787323712,
+          0.28546921242268575,
+          -0.8808925019897214
+        ],
+        [
+          -0.43031701934607447,
+          0.2854692124226859,
+          -0.8808927480060158
+        ]
+      ],
+      "indian-bus": [
+        [
+          -0.8812624407444204,
+          0.39,
+          -3.5575444586209795
+        ]
+      ],
+      "auto": [
+        [
+          0.23837263161654035,
+          0.3047934822838608,
+          -0.2966402557857424
+        ]
+      ]
+    },
+    "finish": "Soft procedural vapor, load-sensitive output and world-space trails. Toggle/save/restore and reset verified.",
+    "additionalImageAssets": 0
+  },
+  "paintStyles": [
+    "solid",
+    "twoTone",
+    "stripes",
+    "pinstripe",
+    "camo",
+    "gradient",
+    "busClassic",
+    "autoBand",
+    "taxiBand",
+    "heritageLine"
+  ],
+  "removedPaintStyles": [
+    "checker",
+    "diagonal"
+  ],
+  "busFinish": {
+    "palette": {
+      "enabled": true,
+      "style": "busClassic",
+      "primary": "#b3293c",
+      "secondary": "#e8d481",
+      "accent": "#b3293c",
+      "finish": "metallic",
+      "scope": "all",
+      "width": 0.12,
+      "scale": 1,
+      "angle": 35,
+      "offset": 0,
+      "detail": 0.08
+    },
+    "reference": "https://commons.wikimedia.org/wiki/File:Bus_-_%E0%B4%AC%E0%B4%B8%E0%B5%8D_-_1.JPG",
+    "passengerClearance": [
+      {
+        "t": 0,
+        "min": -1.1121306277691272,
+        "max": 1.1795271679580124
+      },
+      {
+        "t": 0.6,
+        "min": -1.1119750338361245,
+        "max": 1.1792834801640375
+      },
+      {
+        "t": 1.2,
+        "min": -1.111559094856492,
+        "max": 1.1790353012856851
+      }
+    ],
+    "interiorWallBounds": [
+      {
+        "name": "Passenger saloon lower wall",
+        "min": [
+          -1.1575000286102295,
+          1.059999942779541,
+          -3.315000057220459
+        ],
+        "max": [
+          -1.1325000524520874,
+          1.6799999475479126,
+          6.855000019073486
+        ]
+      },
+      {
+        "name": "Passenger saloon lower wall",
+        "min": [
+          1.1924999952316284,
+          1.059999942779541,
+          -3.315000057220459
+        ],
+        "max": [
+          1.2174999713897705,
+          1.6799999475479126,
+          6.855000019073486
+        ]
+      }
+    ],
+    "capacity": {
+      "seated": 58,
+      "standing": 12
+    }
+  },
+  "busDisplay": {
+    "clearOpticalWindowOpacity": 0.025,
+    "remainingWindshieldOpacity": 0.76,
+    "dayBrightness": 1.18,
+    "litBrightness": 1.45,
+    "textureLimit": 768,
+    "perFrameRedraws": false,
+    "mirrorBelowDisplay": true,
+    "lettering": "Filled antialiased glyph cores with discrete LED emitters; English and Malayalam."
+  },
+  "defaultFinish": "metallic",
+  "pickupCargo": {
+    "height": 0.9197161717352828,
+    "width": 1.364,
+    "length": 1.664,
+    "cartons": [
+      {
+        "x": -0.34,
+        "z": 0.4,
+        "w": 0.43,
+        "h": 0.29,
+        "d": 0.38
+      },
+      {
+        "x": 0.26,
+        "z": 0.33,
+        "w": 0.36,
+        "h": 0.25,
+        "d": 0.33
+      },
+      {
+        "x": -0.27,
+        "z": -0.2,
+        "w": 0.33,
+        "h": 0.23,
+        "d": 0.31
+      }
+    ],
+    "draws": 6,
+    "shared": true,
+    "customAnchor": "getCargoAnchor()",
+    "visibility": "cargo option / setCargoVisible()",
+    "cacheDisposal": {
+      "geometry": true,
+      "materials": true
+    }
+  },
+  "optimization": {
+    "threeExternal": true,
+    "physicsExternal": true,
+    "sourcePacksUnchanged": true,
+    "newImageAssets": 0,
+    "geometryCachedPerVehicleType": true,
+    "cargoDraws": 6,
+    "smokeParticleCapacity": 64,
+    "bodyOverlapRemoved": true,
+    "busWheelFaceDraws": 4,
+    "newHandleDraws": 0
+  },
+  "busWindowRepair": {
+    "driverSillMeters": 1.772,
+    "lowerBodyTriangles": 2,
+    "windshield": "One smooth continuous pane with measured boundary and a mitered pillar seal.",
+    "shadowsEnabled": true,
+    "minimumLitPanelShadowProbe": 250,
+    "shadowProbeCount": 15,
+    "correctedTriangleWinding": 1479,
+    "wiperClearanceMeters": [
+      0.0009701648605611153,
+      0.004566701941310036
+    ],
+    "sharedGeometry": true
+  },
+  "busWheelFinish": {
+    "visibleFaces": 4,
+    "matchedGeometry": true,
+    "matchedMaterial": true,
+    "fixedDuplicateCoversRemoved": true,
+    "rearDualTyresRetained": true,
+    "extraImageAssets": 0
+  }
+}
